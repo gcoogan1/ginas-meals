@@ -84,9 +84,7 @@ body {
 }
 
 .mobile-link:hover {
-  background-color: #A05222;
-  padding: 8px;
-  border-radius: 4px;
+  color: #A05222;
 }
 
 .close-btn {
@@ -114,16 +112,6 @@ body {
   width: 100%;
 }
 
-.body-container {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.content {
-  flex: 1;
-}
-
 .footer p {
   padding-top: 22px;
   color: #411e06;
@@ -143,7 +131,7 @@ body {
 
 
 /* Responsive Styles */
-@media (max-width: 730px) {
+@media (max-width: 768px) {
   .nav-links {
     display: none;
   }
