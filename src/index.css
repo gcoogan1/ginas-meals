@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Cormorant Garamond", serif;
+  background: #F8F4F1;
+  padding-top: 60px;
+  color: #411e06;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F1E1F4;
+  padding: 18px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.logo {
+  color: #411e06;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 16px;
+}
+
+.nav-link {
+  color: #411e06;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border: 2px solid transparent;
+  font-family: "Mulish", sans-serif;
+  font-weight: 100;
+}
+
+.nav-link:hover {
+  border-bottom: 2px solid #A05222;
+  color: #A05222
+}
+
+/* Mobile Hamburger Menu */
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #411e06;
+}
+
+/* Mobile Menu Styles */
+.mobile-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #F1E1F4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.mobile-link {
+  color: #411e06; 
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
+.mobile-link:hover {
+  background-color: #A05222;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2rem;
+  color: #411e06;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.close-btn:hover {
+  color: #A05222;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.body-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+}
+
+.footer p {
+  padding-top: 22px;
+  color: #411e06;
+  opacity: 0.4;
+  position: relative;
+}
+
+.footer p::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #F1E1F4, transparent);
+}
+
+
+/* Responsive Styles */
+@media (max-width: 730px) {
+  .nav-links {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}

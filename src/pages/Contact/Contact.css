@@ -1,0 +1,23 @@
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  flex-direction: column;
+  gap: 30px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.text-section {
+  max-width: 400px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
